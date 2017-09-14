@@ -1,4 +1,4 @@
-guard 'rspec', :cli => '--color --format Fuubar' do
+guard 'rspec', :cmd => 'bundle exec rspec' do
   watch('spec/spec_helper.rb')                        { "spec" }
   watch('config/routes.rb')                           { "spec/controllers" }
   watch('app/controllers/application_controller.rb')  { "spec/controllers" }

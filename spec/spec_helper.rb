@@ -19,6 +19,7 @@ require 'spree/testing_support/authorization_helpers'
 
 RSpec.configure do |config|
   config.include FactoryGirl::Syntax::Methods
+  config.include Spree::TestingSupport::ControllerRequests, type: :controller
 
   # == URL Helpers
   #
